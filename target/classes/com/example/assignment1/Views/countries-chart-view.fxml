@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backgroundColor" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.Controllers.CountriesChartController">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="70.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label prefHeight="39.0" styleClass="header" stylesheets="@../Styles/style.css" text="Countries Chart" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <BarChart fx:id="barChart" animated="false" BorderPane.alignment="CENTER">
+              <xAxis>
+                <CategoryAxis id="categoryName" fx:id="categoryAxis" side="BOTTOM">
+                     <tickLabelFont>
+                        <Font name="Arial Bold Italic" size="10.0" />
+                     </tickLabelFont></CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis id="numberName" fx:id="numberAxis" side="LEFT" />
+              </yAxis>
+               <BorderPane.margin>
+                  <Insets left="5.0" />
+               </BorderPane.margin>
+            </BarChart>
+         </center>
+         <bottom>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label fx:id="noteLabel" prefHeight="30.0" styleClass="noteLabel" text="&quot;0&quot; means that no relevant data was collected">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#viewTable" text="View Table" />
+               </children>
+            </VBox>
+         </bottom>
+         <right>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="15.0" />
+               </BorderPane.margin>
+               <children>
+                  <ComboBox id="dropBox" fx:id="comboBoxValue" onAction="#comboBoxSelect" prefHeight="26.0" prefWidth="103.0" />
+                  <CheckBox id="checkbox" fx:id="radioButton" mnemonicParsing="false" onAction="#radioButton_onClick" text="No &quot;0&quot; data">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

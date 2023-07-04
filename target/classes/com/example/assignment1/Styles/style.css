@@ -1,0 +1,50 @@
+#backgroundColor{
+    -fx-background-color: #FFE6C7;
+}
+.header{
+    -fx-font: bold italic 14px "Arial";
+}
+#tableView{
+    -fx-background-color: #FFE6C7;
+}
+.tableColumn{
+    -fx-background-color: #FFE6C7;
+    -fx-font: normal 13px "Arial";
+    -fx-border-color: #f4f4f4;
+}
+.button{
+    -fx-border-color: #f4f4f4;
+    -fx-background-color: #FF5F00;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.noteLabel{
+    -fx-text-fill: #D1512D;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+#checkbox{
+    -fx-text-fill: #D1512D;
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+#dropBox{
+    -fx-background-color: #B7CADB;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 10px;
+    -fx-text-fill: #0e0e0e;
+    -fx-font-family: "Arial";
+}
+#categoryName, #numberName{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0e0e0e;
+    -fx-font-family: "Arial";
+}
